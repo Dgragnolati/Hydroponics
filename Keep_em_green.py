@@ -10,7 +10,7 @@ Pump_Pin = 4
 #set Lights #17 (AKA BLUE LED (Schematic)
 Lamp_Pin = 17
 # SET outputs
-GPIO.setup(Pump_Pin, GPIO.OUT)
+GPIO.setup(4, GPIO.OUT)
 GPIO.setup(Lamp_Pin, GPIO.OUT)
 
 
@@ -34,12 +34,12 @@ GPIO.setup(Lamp_Pin, GPIO.OUT)
 
 #test script
 
-GPIO.output(Pump_Pin, HIGH)
+GPIO.output(4, HIGH)
 GPIO.output(Pump_Pin, HIGH)
 
 wait(10000)
 
-GPIO.output(Pump_Pin, LOW)
+GPIO.output(4, LOW)
 GPIO.output(Pump_Pin, LOW)
 
 GPIO.cleanup()
