@@ -6,9 +6,9 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 
 #set Pump #4 (AKA WHITE LED (Schematic)
-Pump_Pin = 15
+Pump_Pin = 16
 #set Lights #17 (AKA BLUE LED (Schematic)
-Lamp_Pin = 16
+Lamp_Pin = 18
 # SET outputs
 GPIO.setup(Pump_Pin, GPIO.OUT)
 GPIO.setup(Lamp_Pin, GPIO.OUT)
