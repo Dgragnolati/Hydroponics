@@ -34,12 +34,12 @@ GPIO.setup(Lamp_Pin, GPIO.OUT)
 
 #test script
 
-GPIO.output(Pump_Pin, HIGH)
-GPIO.output(Pump_Pin, HIGH)
+GPIO.output(Pump_Pin, GPIO.HIGH)
+GPIO.output(Pump_Pin, GPIO.HIGH)
 
 wait(10000)
 
-GPIO.output(Pump_Pin, LOW)
-GPIO.output(Pump_Pin, LOW)
+GPIO.output(Pump_Pin, GPIO.LOW)
+GPIO.output(Pump_Pin, GPIO.LOW)
 
 GPIO.cleanup()
