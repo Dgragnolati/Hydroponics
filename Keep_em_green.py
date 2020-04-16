@@ -37,7 +37,7 @@ GPIO.setup(Lamp_Pin, GPIO.OUT)
 GPIO.output(Pump_Pin, GPIO.HIGH)
 GPIO.output(Pump_Pin, GPIO.HIGH)
 
-wait(10000)
+time.sleep(5)
 
 GPIO.output(Pump_Pin, GPIO.LOW)
 GPIO.output(Pump_Pin, GPIO.LOW)
