@@ -39,7 +39,7 @@ GPIO.output(Pump_Pin, HIGH)
 
 wait(10000)
 
-GPIO.output(Pump_Pin, HIGH)
-GPIO.output(Pump_Pin, HIGH)
+GPIO.output(Pump_Pin, LOW)
+GPIO.output(Pump_Pin, LOW)
 
 GPIO.cleanup()
