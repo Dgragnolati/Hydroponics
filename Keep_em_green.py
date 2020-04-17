@@ -31,7 +31,7 @@ def test():
 def schedule_events():
     current_settings = returninfo()
     for controls in current_settings:
-        GPIO.setup(int(controls['Pin']), GPIO.OUT)
+        GPIO.setup(int(current_settings[controls]['Pin']), GPIO.OUT)
         for events in current_settings[controls]['Start_Times']:
             print (str(datetime.strptime(events,"%H:%M")))
             delta_time = (datetime.strptime(events,"%H:%M") - (datetime.now()))
