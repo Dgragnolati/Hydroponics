@@ -1,0 +1,4 @@
+{
+"Pump" : {"Pin" : 16, "Duration": "10", "Start_Times": ["22:09","22:11"] },
+"Light": {"Pin" : 18, "Duration": "50" , "Start_Times": ["22:10"] }
+}
