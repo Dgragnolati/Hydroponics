@@ -31,13 +31,13 @@ def test():
 def schedule_events():
     current_settings = returninfo()
     for controls in current_settings:
-        GPIO.setup(controls['pin'], GPIO.OUT)
+        GPIO.setup(int(controls['Pin']), GPIO.OUT)
         for events in current_settings[controls]['Start_Times']:
             print (str(datetime.strptime(events,"%H:%M")))
             delta_time = (datetime.strptime(events,"%H:%M") - (datetime.now()))
             print (str(delta_time.seconds))
             print ("Creating an event for " + controls + " @ " + events + " for " + current_settings[controls]['Duration'] + " Which is in " + str(delta_time))
-            threading.Timer(delta_time.seconds,control_on,(current_settings[controls]['Pin'],int(current_settings[controls]['Duration']))).start()
+            threading.Timer(delta_time.seconds,control_on,(int(current_settings[controls]['Pin']),int(current_settings[controls]['Duration']))).start()
 
 schedule_events()
 #GPIO.cleanup()
