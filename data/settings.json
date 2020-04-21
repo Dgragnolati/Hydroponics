@@ -1,4 +1,4 @@
 {
-"Pump" : {"Pin" : 16, "Duration": "60", "Start_Times": ["21:30"] },
-"Light": {"Pin" : 18, "Duration": "60" , "Start_Times": ["21:31"] }
+"Pump" : {"Pin" : 16, "Duration": "60", "Start_Times": ["21:44"] },
+"Light": {"Pin" : 18, "Duration": "60" , "Start_Times": ["21:45"] }
 }
