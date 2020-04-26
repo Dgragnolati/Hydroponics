@@ -16,4 +16,4 @@ def control_on (pin,duration):
     GPIO.output(pin, GPIO.LOW)
     GPIO.cleanup()
 
-contorl_on(16,600)
+control_on(16,600)
